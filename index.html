@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Fitness Wala The Gym</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Free Website Template" name="keywords" />
+    <meta content="Free Website Template" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/logoo.jpg" rel="icon" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
+    <link href="css/style.min.css" rel="stylesheet" />
+
+    <style>
+        :root {
+            --light-bg: #ffffff;
+            --dark-bg: #1a1a1a;
+            --light-text: #000000;
+            --dark-text: #ffffff;
+        }
+
+        body {
+            transition: background 0.5s ease, color 0.5s ease;
+            background: var(--light-bg);
+            color: var(--light-text);
+        }
+
+        /* Small emoji button in top-right */
+        #modeBtn {
+            position: fixed;
+            top: 12px;
+            right: 12px;
+            width: 36px;
+            height: 36px;
+            border: none;
+            background: transparent;
+            font-size: 24px;
+            cursor: pointer;
+            user-select: none;
+            z-index: 1000;
+            outline: none;
+            transition: transform 0.3s ease;
+        }
+
+        #modeBtn:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body id="body">
+
+    <!-- Emoji Toggle Button -->
+    <button id="modeBtn" onclick="toggleMode()" aria-label="Toggle dark/light mode">🌙</button>
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-dark py-3" style="background: transparent;">
+            <a href="" class="navbar-brand animated-brand">
+                <h1 class="m-0 display-4 font-weight-bold text-uppercase"
+                    style="color:#51646891;text-shadow:2px 2px 4px rgba(21, 20, 20, 0.6)">Fitness Wala The Gym</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto p-4" style="background-color: #12121200;">
+                    <a href="." class="nav-item nav-link">Home</a>
+                    <a href="#about" class="nav-item nav-link">About Us</a>
+                    <a href="#features" class="nav-item nav-link">Our Features</a>
+                    <a href="https://your-family-friendly-gym.vercel.app/"
+                        class="nav-item nav-link active">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <script>
+        function toggleMode() {
+            const body = document.getElementById("body");
+            const btn = document.getElementById("modeBtn");
+
+            const isDark = body.style.background === "var(--dark-bg)";
+            if (isDark) {
+                body.style.background = "var(--light-bg)";
+                body.style.color = "var(--light-text)";
+                btn.textContent = "🌙"; // moon emoji for dark mode toggle
+            } else {
+                body.style.background = "var(--dark-bg)";
+                body.style.color = "var(--dark-text)";
+                btn.textContent = "☀️"; // sun emoji for light mode toggle
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+
+<!-- Carousel Start -->
+<div class="container-fluid p-0">
+    <div id="blog-carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+
+            <!-- First Slide -->
+            <div class="carousel-item active">
+                <div style="position: relative;">
+                    <img src="img/carousel-11.jpg" alt="Image" class="w-100"
+                        style="filter: brightness(0.6) contrast(1.2) grayscale(20%); transform: scale(1.05); transition: transform 1.5s ease;">
+                    <div
+                        style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; background: rgba(0, 0, 0, 0.35); z-index: 1;">
+                    </div>
+                </div>
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center"
+                    style="z-index: 2;">
+                    <h3 style="font-size: 1.5rem; color: #f8f8f8; text-shadow: 1px 1px 3px black;">Gym & Fitness Center
+                    </h3>
+                    <h2
+                        style="font-size: 3rem; font-weight: 800; background: linear-gradient(45deg, #356675, #a87066); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                        Best Gym In Bhopal</h2>
+                    <a href="https://your-family-friendly-gym.vercel.app/"
+                        class="btn btn-lg mt-3 mt-md-5 py-md-3 px-md-5"
+                        style="background: rgba(255, 255, 255, 0.1); border: 1px solid white; color: white; backdrop-filter: blur(10px); transition: all 0.3s ease;">Join
+                        Us Now</a>
+                </div>
+            </div>
+
+            <!-- Second Slide -->
+            <div class="carousel-item">
+                <div style="position: relative;">
+                    <img src="img/new2.jpg" alt="Image" class="w-100"
+                        style="filter: brightness(0.6) contrast(1.2) grayscale(20%); transform: scale(1.05); transition: transform 1.5s ease;">
+                    <div
+                        style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; background: rgba(0, 0, 0, 0.35); z-index: 1;">
+                    </div>
+                </div>
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center"
+                    style="z-index: 2;">
+                    <h3 style="font-size: 1.5rem; color: #f8f8f8; text-shadow: 1px 1px 3px black;">Gym & Fitness Center
+                    </h3>
+                    <h2
+                        style="font-size: 3rem; font-weight: 800; background: linear-gradient(45deg, #00c6ff, #0072ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                        Get Body In Shape</h2>
+                    <a href="https://www.instagram.com/_vikaslifts?igsh=MWpwOHNrbGxtYTY0bQ=="
+                        class="btn btn-lg mt-3 mt-md-5 py-md-3 px-md-5"
+                        style="background: rgba(255, 255, 255, 0.1); border: 1px solid white; color: white; backdrop-filter: blur(10px); transition: all 0.3s ease;">Join
+                        Us Now</a>
+                </div>
+            </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#blog-carousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#blog-carousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+</div>
+<!-- Carousel End -->
+
+
+
+<!-- Gym Class Start -->
+
+
+
+<!-- About Start -->
+<div class="container py-5">
+    <div class="row align-items-center">
+        <!-- Image Column -->
+        <div class="col-lg-6">
+            <img src="img/IMG-20250406-WA0002.jpg" alt="Image" class="img-fluid mb-4 mb-lg-0"
+                style="border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); transform: scale(1); transition: transform 1s ease, filter 0.5s ease; animation: floatIn 1.5s ease-out forwards; opacity: 0;"
+                onmouseover="this.style.transform='scale(1.05)'; this.style.filter='brightness(1.1)'"
+                onmouseout="this.style.transform='scale(1)'; this.style.filter='brightness(1)'">
+        </div>
+
+    <!-- Text Column -->
+    <div class="col-lg-6" style="animation: fadeInRight 1.5s ease forwards; opacity: 0;">
+        <h2 class="display-4 font-weight-bold mb-4"
+            style="background: linear-gradient(to right, #ff512f, #dd2476); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+            10 Years Experience
+        </h2>
+        <p style="font-size: 1.1rem;">
+            Vikas is a dedicated fitness trainer with over a decade of experience. Known for his personalized coaching
+            style and proven results, he is committed to helping every client achieve their best shape and health.
+        </p>
+        <div class="row py-2">
+            <div class="col-sm-6">
+                <i class="flaticon-barbell display-2" style="color: #00bcd4;"></i>
+                <h4 class="font-weight-bold" style="color: #333;">Certified GYM Center</h4>
+                <p style="color: #555;">A certified trainer guiding you through safe and effective workouts tailored to your
+                    goals.</p>
+            </div>
+            <div class="col-sm-6">
+                <i class="flaticon-medal display-2" style="color: #ff9800;"></i>
+                <h4 class="font-weight-bold" style="color: #333;">Award Winning Coach</h4>
+                <p style="color: #555;">Recognized for excellence in training and motivation, Vikash inspires clients to
+                    push beyond limits.</p>
+            </div>
+        </div>
+        <a href="#" class="btn btn-lg px-4 btn-outline-primary" style="transition: background 0.3s, color 0.3s;"
+            onmouseover="this.style.background='#007bff'; this.style.color='white';"
+            onmouseout="this.style.background='transparent'; this.style.color='';">
+            Learn More
+        </a>
+    </div>
+
+<!-- Inline Keyframes (you can paste these at the bottom of body for pure inline effect) -->
+<style>
+    @keyframes floatIn {
+        0% {
+            transform: translateY(30px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeInRight {
+        0% {
+            transform: translateX(50px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+</style>
+<!-- About End -->
+
+
+
+
+
+<!-- Certificate Start -->
+<div class="container pt-5 certificate">
+    <div class="d-flex flex-column text-center mb-5">
+        <h4 class="text-primary font-weight-bold">Our Certifications</h4>
+        <h4 class="display-4 font-weight-bold">Professional Gym Certifications</h4>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-6 mb-5">
+            <div class="card border-0 bg-secondary text-center text-white">
+                <img class="card-img-top" src="img/aw3.jpg" alt="Certificate 1">
+                <div class="card-body bg-secondary">
+                    <h4 class="card-title text-primary">Certified Personal Trainer</h4>
+                    <p class="card-text">Issued by Sandeep Academy Of Fitness Sciences</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <div class="card border-0 bg-secondary text-center text-white">
+                <img class="card-img-top" src="img/aw2.jpg" alt="Certificate 2">
+                <div class="card-body bg-secondary">
+                    <h4 class="card-title text-primary"> Mr. MP 2024 <br> (MAYOR TROPHY)</h4>
+                    <p class="card-text">Awarded by Rajya Sharir <br>
+                        Shousthav Sanstha Ujjain <br>(MP)</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <div class="card border-0 bg-secondary text-center text-white">
+                <img class="card-img-top" src="img/aw4.jpg" alt="Certificate 3">
+                <div class="card-body bg-secondary">
+                    <h4 class="card-title text-primary">MP Shreshtha Body Building Championship</h4>
+                    <p class="card-text">Awarded by M.P Amature Body Building Championship <br>2024</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <div class="card border-0 bg-secondary text-center text-white">
+                <img class="card-img-top" src="img/aw1.jpg" alt="Certificate 4">
+                <p class="card-text">UDYAM REGISTRATION Certificate</p>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<style>
+    .certificate .card-img-top {
+        
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .certificate .card-img-top:hover {
+        transform: scale(1.05);
+    }
+</style>
+
+<!-- Certificate End -->
+
+
+<!-- Testimonial Start -->
+<!-- Beginner Workout Start -->
+<div class="container-fluid position-relative beginner-workout my-5">
+    <div class="container">
+        <div class="row px-3 align-items-center">
+            <div class="col-md-6 bg-secondary">
+                <div class="d-flex align-items-center px-3" style="min-height: 450px;">
+                    <div id="workoutCarousel" class="carousel slide w-100" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#workoutCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#workoutCarousel" data-slide-to="1"></li>
+                            <li data-target="#workoutCarousel" data-slide-to="2"></li>
+                            <li data-target="#workoutCarousel" data-slide-to="3"></li>
+                            <li data-target="#workoutCarousel" data-slide-to="4"></li>
+                            <li data-target="#workoutCarousel" data-slide-to="5"></li>
+                            <li data-target="#workoutCarousel" data-slide-to="6"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <!-- Day 1 -->
+                            <div class="carousel-item active text-white">
+                                <h4 class="text-primary mb-3">Day 1: Full Body Warm-up</h4>
+                                <video width="100%" controls poster="img/workout-day1.jpg">
+                                    <source src="videos/day1-workout.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                                <p class="mt-3">Gentle warm-up exercises to prepare your body for the week ahead.</p>
+                            </div>
+                            <!-- Day 2 -->
+                            <div class="carousel-item text-white">
+                                <h4 class="text-primary mb-3">Day 2: Upper Body Strength</h4>
+                                <video width="100%" controls poster="img/workout-day2.jpg">
+                                    <source src="videos/day2-workout.mp4" type="video/mp4" />
+                                </video>
+                                <p class="mt-3">Beginner-friendly upper body workout focusing on arms and shoulders.</p>
+                            </div>
+                            <!-- Day 3 -->
+                            <div class="carousel-item text-white">
+                                <h4 class="text-primary mb-3">Day 3: Lower Body Basics</h4>
+                                <video width="100%" controls poster="img/workout-day3.jpg">
+                                    <source src="videos/day3-workout.mp4" type="video/mp4" />
+                                </video>
+                                <p class="mt-3">Strengthen your legs and glutes with these simple exercises.</p>
+                            </div>
+                            <!-- Day 4 -->
+                            <div class="carousel-item text-white">
+                                <h4 class="text-primary mb-3">Day 4: Core Stability</h4>
+                                <video width="100%" controls poster="img/workout-day4.jpg">
+                                    <source src="videos/day4-workout.mp4" type="video/mp4" />
+                                </video>
+                                <p class="mt-3">Focus on your core muscles to improve posture and balance.</p>
+                            </div>
+                            <!-- Day 5 -->
+                            <div class="carousel-item text-white">
+                                <h4 class="text-primary mb-3">Day 5: Cardio Fundamentals</h4>
+                                <video width="100%" controls poster="img/workout-day5.jpg">
+                                    <source src="videos/day5-workout.mp4" type="video/mp4" />
+                                </video>
+                                <p class="mt-3">Low-impact cardio to boost your heart health and stamina.</p>
+                            </div>
+                            <!-- Day 6 -->
+                            <div class="carousel-item text-white">
+                                <h4 class="text-primary mb-3">Day 6: Flexibility & Stretching</h4>
+                                <video width="100%" controls poster="img/workout-day6.jpg">
+                                    <source src="videos/day6-workout.mp4" type="video/mp4" />
+                                </video>
+                                <p class="mt-3">Stretch your muscles to increase flexibility and prevent injury.</p>
+                            </div>
+                            <!-- Day 7 -->
+                            <div class="carousel-item text-white">
+                                <h4 class="text-primary mb-3">Day 7: Rest & Recovery</h4>
+                                <video width="100%" controls poster="img/workout-day7.jpg">
+                                    <source src="videos/day7-relaxation.mp4" type="video/mp4" />
+                                </video>
+                                <p class="mt-3">Guided relaxation and breathing exercises for recovery.</p>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#workoutCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#workoutCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="pl-md-3 d-none d-md-block">
+                    <h4 class="text-primary">Beginner Workout</h4>
+                    <h4 class="display-4 mb-4 font-weight-bolder text-red">7-Day Workout Plan for Beginners</h4>
+                    <p class="m-0 text-red">
+                        Kickstart your fitness journey with this easy-to-follow 7-day workout plan. Each day focuses on
+                        a different area to help you build strength, endurance, and flexibility safely. Perfect for
+                        beginners looking to create a healthy routine.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Beginner Workout End -->
+
+<!-- Testimonial End -->
+
+
+<!-- Gym Tour Start -->
+<div class="container pt-5" id="gym-tour">
+    <div class="d-flex flex-column text-center mb-5">
+        <h4 class="text-primary font-weight-bold">My Gym Tour</h4>
+        <h4 class="display-4 font-weight-bold">Explore Our Facilities</h4>
+    </div>
+    <div class="row align-items-center">
+        <div class="col-lg-6 mb-5">
+            <!-- Embedded gym tour video -->
+            <div class="embed-responsive embed-responsive-16by9 shadow rounded">
+                <video controls style="width: 100%; border-radius: 10px;">
+                    <source src="./img/GYM T.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div class="col-lg-6 mb-5">
+            <h3 class="font-weight-bold mb-4">Take a Virtual Tour of Our Gym</h3>
+            <p>Experience our state-of-the-art equipment, spacious workout areas, and vibrant atmosphere through this
+                video tour. We are committed to providing the best environment for your fitness journey.</p>
+            <ul class="list-unstyled text-muted mb-4 " style="font-size: 1.1rem;">
+                <li><i class="fa fa-check text-primary mr-2"></i>Modern cardio and strength training machines</li>
+                <li><i class="fa fa-check text-primary mr-2"></i>Dedicated yoga and group fitness studios</li>
+                <li><i class="fa fa-check text-primary mr-2"></i>Clean and spacious locker rooms</li>
+                <li><i class="fa fa-check text-primary mr-2"></i>Expert trainers available on site</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline-primary px-4">Join Us Today</a>
+        </div>
+    </div>
+</div>
+<!-- Gym Tour End -->
+
+
+
+<!-- Footer Start -->
+<div class="footer container-fluid mt-5 py-5 px-sm-3 px-md-5 text-white"
+    style="background: rgb(24, 24, 24); backdrop-filter: blur(5px);">
+    <div class="row pt-5">
+        <div class="col-lg-4 col-md-6 mb-5" style="animation: fadeInUp 1s ease forwards; opacity: 0;">
+            <h4 class="text-primary mb-4">Get In Touch</h4>
+            <p>
+                <i class="fa fa-map-marker-alt mr-2"></i>
+                <a href="https://g.co/kgs/x8AiQ7X" target="_blank" style="text-decoration: none; color: inherit;">
+                    Infront Of Karunadham Maha Laxmi Temple, BM 53, Bhadbhada Road, Nehru Nagar
+                </a>
+            </p>
+              
+            <p><i class="fa fa-phone-alt mr-2"></i>+91 8269330675</p>
+            <p><i class="fa fa-envelope mr-2"></i>Vicasbhargav8269@gmail.com</p>
+            <div class="d-flex justify-content-start mt-4">
+                <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;"
+                    href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;"
+                    href="https://www.facebook.com/share/199fhWiYsP/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;"
+                    href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;"
+                    href="https://www.instagram.com/_vikaslifts?igsh=MWpwOHNrbGxtYTY0bQ=="><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5" style="animation: fadeInUp 1.3s ease forwards; opacity: 0;">
+            <h4 class="text-primary mb-4">Quick Links</h4>
+            <div class="d-flex flex-column justify-content-start">
+                <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Features</a>
+                <!--<a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Classes</a>-->
+                <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5" style="animation: fadeInUp 1.6s ease forwards; opacity: 0;">
+            <h4 class="text-primary mb-4">Opening Hours</h4>
+            <h5 class="text-white">Monday - Friday</h5>
+            <p>6.00 AM - 10.00 PM</p>
+        </div>
+    </div>
+    <div class="container border-top border-dark pt-5">
+        <p class="m-0 text-center text-white">
+            <footer>
+                &copy; 2025 Fitness Wala. All rights reserved With
+                <a href="https://www.instagram.com/dirty_mirrorr/?igsh=cGtwa3R1OXB1djFw&utm_source=qr#" target="_blank"
+                    rel="noopener noreferrer"
+                    style="color: #f7c948; text-decoration: none; display: inline-flex; align-items: center; margin-left: 4px;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Finsta logo"
+                        style="width: 16px; height: 16px; margin-right: 6px;" />
+                    Abhi Dubey❤️
+                </a>.   </footer>
+        </p>
+    </div>
+
+    <style>
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0.8;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</div>
+<!-- Footer End -->
+
+
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-outline-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+
+<!-- Contact Javascript File -->
+<script src="mail/jqBootstrapValidation.min.js"></script>
+<script src="mail/contact.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+</body>
+
+</html>
